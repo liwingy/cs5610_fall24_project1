@@ -154,8 +154,7 @@ p {
 }
 
 .centered-video:hover,
-.pics:hover,
-.grid:hover{
+.pics:hover {
     transform: scale(1.05);      /* Slightly enlarge on hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
 }
@@ -183,6 +182,7 @@ nav ul {
     font-weight: bold;     /* Makes the title bold */
     color: #fff;           /* Sets the text color */
     text-transform: uppercase;  /* Capitalizes the title */
+    margin-right: auto;     /* Pushes the title to the left */
 }
 
 nav ul li {
