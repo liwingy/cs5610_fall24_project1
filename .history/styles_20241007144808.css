@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    flex-direction: column;  /* Stack body content in a column */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;     /* Add space below the header */
+}
+
+nav ul {
+    list-style: none;
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;  /* Makes the navbar vertical */
+    align-items: center;
+    width: 100%;             /* Make the navbar span the full width */
+    position: fixed;         /* Fix the navbar at the top */
+    top: 0;
+    height: 100%;            /* Full height for vertical navbar */
+}
+
+nav ul li {
+    margin: 10px 0;          /* Space out items vertically */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.active {
+    background-color: #007BFF;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.about-me, .projects, .contact, .blog {
+    margin: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack the items vertically in mobile view */
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}

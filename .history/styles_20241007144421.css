@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex; /* Flexbox ensures items are in a row */
+    justify-content: space-around; /* Spreads the items across the navbar */
+    align-items: center; /* Centers the items vertically */
+}
+
+nav ul li {
+    margin: 0 10px; /* Adds spacing between list items */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.active {
+    background-color: #007BFF;
+}
+
+header {
+    padding: 100px 20px 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.about-me, .projects, .contact, .blog {
+    margin: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* In mobile view, stack the items vertically */
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adds vertical spacing between list items in mobile view */
+    }
+}
