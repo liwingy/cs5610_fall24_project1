@@ -172,7 +172,7 @@ nav {
 nav ul {
     list-style: none;            /* Remove bullet points from navbar items */
     display: flex;               /* Display the navbar items in a row */
-    justify-content: center;     /* Center the navbar items */
+    justify-content: space-between;;     /* Center the navbar items */
     margin: 0;
     padding: 0;
 }
